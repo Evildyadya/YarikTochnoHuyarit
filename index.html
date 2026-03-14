@@ -16,6 +16,7 @@
         body {
             margin: 0;
             padding: 15px;
+            overflow-x: hidden;
             background: linear-gradient(to bottom, #000033, #000066);
             color: #ff0000;
             font-family: 'Creepster', cursive;
@@ -166,7 +167,12 @@
 
         @media (max-width: 400px) {
             .photo-frame {
+                width: 100%;
+                max-width: 100%;
+                padding: 8px;
+                border-width: 6px;
                 transform: rotate(-1deg);
+                margin: 25px auto;
             }
         }
     </style>
@@ -199,7 +205,7 @@
 
     <div class="music-player">
         <iframe
-                src="https://www.youtube.com/embed/f77PLFRP3Ok?autoplay=1&mute=1&loop=1&playlist=f77PLFRP3Ok&rel=0"
+                src="https://www.youtube.com/embed/f77PLFRP3Ok?autoplay=1&loop=1&playlist=f77PLFRP3Ok&rel=0"
                 title="Blue Oyster Bar Theme - El Bimbo"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
