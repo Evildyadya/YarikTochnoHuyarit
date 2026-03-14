@@ -1,124 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Breaking News - Trully no FAKE news</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #b30000;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    .container {
-      max-width: 900px;
-      margin: 30px auto;
-      background-color: white;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .article-title {
-      font-size: 2em;
-      color: #b30000;
-      margin-bottom: 10px;
-    }
-    .meta {
-      color: gray;
-      font-size: 0.9em;
-      margin-bottom: 30px;
-    }
-    .article img {
-      width: 100%;
-      margin: 20px 0;
-    }
-    .quote {
-      border-left: 4px solid #b30000;
-      padding-left: 15px;
-      margin: 20px 0;
-      font-style: italic;
-      color: #333;
-    }
-    .poll, .banner, .reactions {
-      border: 1px solid #ccc;
-      background-color: #fff0f0;
-      padding: 20px;
-      margin: 30px 0;
-      box-shadow: 0 0 8px rgba(255,0,0,0.1);
-    }
-    .poll h3, .banner h3, .reactions h3 {
-      color: #b30000;
-      margin-top: 0;
-    }
-    footer {
-      text-align: center;
-      font-size: 0.8em;
-      color: #888;
-      padding: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РАЗЫСКИВАЕТСЯ — САМЫЙ ОПАСНЫЙ МАЧО ГЕРМАНИИ</title>
+    <style>
+        @import "images";
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to bottom, #000033, #000066);
+            color: #ff0000;
+            font-family: 'Creepster', cursive;
+            text-align: center;
+            background-image: url('https://i.imgur.com/8zZ0Z0Z.jpg'); /* disco vibe, можно заменить */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(0,0,0,0.75);
+            border: 8px solid #ff0000;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 50px #00ffff, inset 0 0 30px #ff00ff;
+        }
+
+        h1 {
+            font-family: 'UnifrakturMaguntia', cursive;
+            font-size: 5.5em;
+            margin: 0;
+            color: #ffff00;
+            text-shadow: 5px 5px 12px #ff0000, -5px -5px 12px #00ffff;
+            letter-spacing: 10px;
+        }
+
+        .subtitle {
+            font-size: 2.5em;
+            color: #00ffff;
+            margin: 15px 0;
+            text-shadow: 4px 4px 8px #000;
+        }
+
+        .photo-frame {
+            margin: 40px auto;
+            width: 400px;
+            padding: 20px;
+            background: #fff;
+            border: 15px solid #ffd700;
+            box-shadow: 0 0 40px #ff00ff;
+            transform: rotate(-4deg);
+        }
+
+        .photo {
+            width: 100%;
+            height: auto;
+            border: 6px solid #000;
+            box-shadow: inset 0 0 25px #000;
+        }
+
+        .crimes {
+            font-size: 1.8em;
+            color: #ff69b4;
+            margin: 40px 0;
+            line-height: 1.5;
+        }
+
+        .reward {
+            font-size: 3.2em;
+            color: #00ff00;
+            text-shadow: 0 0 25px #00ff00;
+            margin: 50px 0;
+        }
+
+        .blue-oyster {
+            font-size: 3em;
+            color: #00bfff;
+            margin: 70px 0 30px;
+            text-shadow: 0 0 20px #00ffff;
+        }
+
+        .footer {
+            font-size: 1.6em;
+            color: #ffff00;
+            margin-top: 60px;
+            font-style: italic;
+        }
+
+        .disclaimer {
+            font-size: 1.3em;
+            color: #ccc;
+            margin-top: 50px;
+        }
+
+        .music-player {
+            margin: 50px auto;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        iframe {
+            border: 5px solid #ff00ff;
+            box-shadow: 0 0 30px #00ffff;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Trully no FAKE news</h1>
-    <p>Absolutely verified nonsense</p>
-  </header>
-  <div class="container article">
-    <div class="article-title">Канцлер Германии объявил военное положение после выходок украинского беженца в Берлине</div>
-    <div class="meta">12 апреля 2025, Берлин</div>
-    <p>Германия потрясена ночными событиями в Берлине, после которых федеральный канцлер Олаф Шольц был вынужден ввести временное военное положение в нескольких районах столицы. Виной всему — выходки некого Ярослава А., украинского беженца, временно проживающего в Германии.</p>
 
-    <p>Согласно официальному отчёту берлинской полиции, инциденты начались около 02:00 ночи, когда Ярослав, в состоянии крайнего алкогольного опьянения, попытался организовать «техно-дискотеку единства» прямо у Бранденбургских ворот, подключив переносную колонку к полицейскому автомобилю. Танцы продолжались 18 минут, пока кто-то не вызвал подкрепление.</p>
+<div class="container">
+    <h1>РАЗЫСКИВАЕТСЯ!</h1>
+    <p class="subtitle">Bundespolizei der Herzen & Blue Oyster Bar Task Force — Германия в опасности!</p>
 
-    <img src="https://img3.teletype.in/files/20/40/2040f7f7-de38-4462-8f4c-b4512ffbb1de.jpeg" alt="Пати">
-
-    <p>После задержания Ярославу удалось сбежать из полицейского участка, воспользовавшись тем, что один из офицеров отвлекся на шаверму. Спустя час он был замечен в районе резиденции канцлера, где, по словам свидетелей, он громко кричал: «Шольц! Выходи, будем говорить за мир!».</p>
-
-    <div class="quote">«Он утверждал, что у него "любовь с дочкой канцлера", хотя у Шольца нет дочери. Но позже стало известно, что он провёл ночь с его племянником, думая, что это дочь. Утром он извинился, но добавил: “Всё равно было волшебно”», — сообщил источник в службе охраны.</div>
-
-    <p>Кроме того, Ярослав случайно присоединился к утреннему брифингу Бундестага, думая, что это шведский завтрак. Он пытался раздавать депутатам кефир и варёные яйца, пока его не вывели с формулировкой «за избыточную доброжелательность».</p>
-
-    <div class="poll">
-      <h3>Опрос: как вы относитесь к поступку Ярослава?</h3>
-      <ul>
-        <li>✔ Это просто шутка, пусть отпустят бедолагу</li>
-        <li>✔ Уровень деструктива зашкаливает, пусть сидит</li>
-        <li>✔ Главное, что кефир свежий был</li>
-        <li>✔ Я бы тоже пошёл на брифинг за завтраком</li>
-      </ul>
+    <div class="photo-frame">
+        <img src="images/photo_2026-03-14_12-15-30.jpg" alt="Опасный Мачо" class="photo">
+        <div class="photo-caption">ГЛАВНЫЙ МАЧО НАД БАРНОЙ СТОЙКОЙ</div>
     </div>
 
-    <p>Олаф Шольц прокомментировал ситуацию на срочном брифинге: «Германия многое пережила, но такое — впервые. Мы не можем позволить, чтобы один человек дестабилизировал столицу за ночь».</p>
+    <p class="crimes">
+        <strong>Прозвища:</strong> "The Ladies' Viking", "Король Голубой Устрицы", "Мачо-апокалипсис", "Зеркальный Соблазнитель"<br><br>
+        <strong>Преступления против человечества и сердец:</strong><br>
+        • Слишком интенсивный взгляд в зеркало (ст. 69 УК "Горландского Штурвала")<br>
+        • Переизбыток харизмы в ванной уровня "Я плейбой и хуй с тобой"<br>
+        • Автоматическое разбивание сердец в радиусе 100 метров<br>
+        • Незаконное ношение goatee-бородки уровня "я бог секса"<br>
+        • Создание мемного вайба "я неотразим" на селфи<br>
+        • Массовое заражение кринжем всех, кто увидел фото
+    </p>
 
-    <img src="https://ichef.bbci.co.uk/ace/ws/800/cpsprodpb/15B8F/production/_123257988_scholz_kiev_140222_afp.jpg.webp" alt="Шольц в шоке">
+    <p class="reward">НАГРАДА: 1 000 000 € + пожизненный VIP-статус в Die Blaue Auster (Голубая Устрица)</p>
 
-    <p>По словам очевидцев, при задержании Ярослав у каждого встречного спрашивал: «Сосал?», вызывая у офицеров замешательство и неловкость. Сейчас он находится под наблюдением в закрытом учреждении, где, по неподтвержденным данным, просит передать ему тапочки и журнал с кроссвордами.</p>
+    <p class="blue-oyster">В "Die Blaue Auster" (Blue Oyster Bar) над баром висит ЕГО фото!<br>Под вечный гимн заведения...</p>
 
-    <div class="reactions">
-      <h3>Реакция звёзд</h3>
-      <p><strong>Райан Гослинг</strong> на утреннем шоу заявил: «Ну почему он, а не я?»</p>
-      <p><strong>Мадонна</strong> разместила в Instagram сторис с подписью: «Мир — это Ярослав в берлинском свете».</p>
-      <p><strong>Дуэйн Джонсон</strong> в Twitter назвал Ярослава «Slavic hurricane» и предложил сыграть его в байопике.</p>
+    <div class="music-player">
+        <p style="font-size: 2em; color: #ffff00; margin-bottom: 20px;">Включи и почувствуй атмосферу! 🎶💃🕺</p>
+        <iframe width="100%" height="200" src="https://www.youtube.com/embed/f77PLFRP3Ok?autoplay=1&mute=0&loop=1&playlist=f77PLFRP3Ok"
+                title="Blue Oyster Bar Theme - El Bimbo" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
     </div>
 
-    <div class="banner">
-      <h3>Поддержите Ярослава!</h3>
-      <p>Помогите нашему герою оплатить адвоката, тапочки и колонку JBL. Поддержите его на Patreon: <strong>patreon.com/YarikUnstoppable</strong></p>
-    </div>
+    <p class="footer">Dead or Alive... но лучше Alive (но это не обязательно)<br>
+    Последний раз замечен: в ванной с телефоном, посравший и с самоуверенной ухмылкой</p>
 
-  </div>
-  <footer>
-    &copy; 2025 Trully no FAKE news — Все права защищены, кроме здравого смысла.
-  </footer>
+    <p class="disclaimer">Дополнительные комментарии от Warrior: "Ну и гныда Калона"</p>
+</div>
+
 </body>
 </html>
