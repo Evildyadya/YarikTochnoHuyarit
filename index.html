@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>РАЗЫСКИВАЕТСЯ — САМЫЙ ОПАСНЫЙ МАЧО ГЕРМАНИИ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     <style>
-        @import "images";
-
         body {
             margin: 0;
-            padding: 20px;
+            padding: 15px;
             background: linear-gradient(to bottom, #000033, #000066);
             color: #ff0000;
             font-family: 'Creepster', cursive;
             text-align: center;
-            background-image: url('https://cs15.pikabu.ru/post_img/2024/07/11/4/1720672012124869276.jpg'); /* disco vibe, можно заменить */
+            background-image: url('https://cs15.pikabu.ru/post_img/2024/07/11/4/1720672012124869276.jpg');
             background-size: cover;
             background-attachment: fixed;
+            background-position: center;
         }
 
         .container {
+            width: 90%;
             max-width: 900px;
             margin: 0 auto;
             background: rgba(0,0,0,0.75);
@@ -32,7 +36,7 @@
         h1 {
             font-family: 'UnifrakturMaguntia', cursive;
             font-size: 5.5em;
-            margin: 0;
+            margin: 0 0 10px;
             color: #ffff00;
             text-shadow: 5px 5px 12px #ff0000, -5px -5px 12px #00ffff;
             letter-spacing: 10px;
@@ -47,19 +51,30 @@
 
         .photo-frame {
             margin: 40px auto;
-            width: 400px;
-            padding: 20px;
+            width: 80%;
+            max-width: 400px;
+            min-width: 220px;
+            padding: 15px;
             background: #fff;
-            border: 15px solid #ffd700;
+            border: 12px solid #ffd700;
             box-shadow: 0 0 40px #ff00ff;
-            transform: rotate(-4deg);
+            transform: rotate(-3deg);
         }
 
         .photo {
             width: 100%;
+            max-width: 100%;
             height: auto;
             border: 6px solid #000;
             box-shadow: inset 0 0 25px #000;
+            display: block;
+        }
+
+        .photo-caption {
+            margin-top: 15px;
+            font-size: 1.8em;
+            color: #ff0000;
+            text-shadow: 2px 2px 4px #000;
         }
 
         .crimes {
@@ -99,12 +114,62 @@
         .music-player {
             margin: 50px auto;
             width: 100%;
-            max-width: 600px;
+            max-width: 700px;
         }
 
         iframe {
+            width: 100%;
+            height: 315px;
             border: 5px solid #ff00ff;
             box-shadow: 0 0 30px #00ffff;
+        }
+
+        /* Мобильная адаптация */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                width: 95%;
+                padding: 20px;
+                border-width: 5px;
+            }
+
+            h1 {
+                font-size: 3.8em;
+                letter-spacing: 6px;
+            }
+
+            .subtitle {
+                font-size: 1.9em;
+            }
+
+            .photo-frame {
+                width: 95%;
+                max-width: none;
+                padding: 10px;
+                border-width: 8px;
+                transform: rotate(-2deg);
+                margin: 30px auto;
+            }
+
+            .crimes, .reward, .blue-oyster, .footer, .disclaimer {
+                font-size: 1.4em;
+            }
+
+            iframe {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 3em;
+            }
+            .photo-frame {
+                transform: rotate(-1deg);
+            }
         }
     </style>
 </head>
@@ -135,15 +200,18 @@
     <p class="blue-oyster">В "Die Blaue Auster" (Blue Oyster Bar) над баром висит ЕГО фото!<br>Под вечный гимн заведения...</p>
 
     <div class="music-player">
-        <iframe width="100%" height="200" src="https://www.youtube.com/embed/f77PLFRP3Ok?autoplay=1&mute=0&loop=1&playlist=f77PLFRP3Ok"
-                title="Blue Oyster Bar Theme - El Bimbo" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
+        <iframe
+                src="https://www.youtube.com/embed/f77PLFRP3Ok?autoplay=1&mute=1&loop=1&playlist=f77PLFRP3Ok&rel=0"
+                title="Blue Oyster Bar Theme - El Bimbo"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
     </div>
 
     <p class="footer">Dead or Alive... но лучше Alive (но это не обязательно)<br>
-    Последний раз замечен: в ванной с телефоном, посравший и с самоуверенной ухмылкой</p>
+        Последний раз замечен: в ванной с телефоном, посравший и с самоуверенной ухмылкой</p>
 
     <p class="disclaimer">Дополнительные комментарии от Warrior: "Ну и гныда Калона"</p>
 </div>
